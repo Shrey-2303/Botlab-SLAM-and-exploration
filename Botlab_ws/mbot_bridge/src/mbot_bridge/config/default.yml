@@ -1,0 +1,17 @@
+lcm_address: "udpm://239.255.76.67:7667?ttl=1"
+# The server listens to these channels.
+subs:
+  - channel: "LIDAR"
+    type: "lidar_t"
+  - channel: "MBOT_ODOMETRY"
+    type: "pose2D_t"
+  - channel: "SLAM_POSE"
+    type: "pose2D_t"
+# The server publishes messages to these channels.
+pubs:
+  - channel: "MBOT_VEL_CMD"
+    type: "twist2d_t"
+  - channel: "MBOT_ODOMETRY_RESET"
+    type: "pose2D_t"
+  - channel: "CONTROLLER_PATH"
+    type: "path2D_t"
